@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+#about-meq{
+    padding:  150px 0;
+}
+.h5{
+    margin-bottom: .5rem;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    line-height: 1.44;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+#filter-text{
+    font-size: 1.25;
+    margin-bottom: .5rem;
+    font-family: "Cardo",sans-serif;
+    line-height: 1.44;
+    color: inherit;
+}
+.icon{
+    font-size: 50px;
+    color: #262626;
+    margin-bottom: 10px;
+}
+#main-text{
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-size: 2.1rem;
+    line-height: 1.44;
+    letter-spacing: 0.2em;
+    border-bottom: 40px;
+}
+#main-text::after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 20px 0 20px;
+    background: #555;
+
+}
+#about-text{
+    font-family: "Cardo","Times New Roman",Times,serif;
+    font-size: 1rem;
+    color: #212529;
+    letter-spacing: 0em;
+}
+#about-letter{
+    font-family: "Cardo","Times New Roman",Times,serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #212529;
+    letter-spacing: 0em;
+}
+#img-aboutme{
+    width: 528px;
+    height:528px;
+    border-radius: 50%;
+   
+}
+.service-sec{
+    padding: 150px 0;
+    background-color:#eee ;
+}
+.pro-sec{
+    padding: 150px 0;
+}
+#project-image{
+    width: 80%;
+    height:auto;
+}
+.modal-dialogue{
+    width: 80%;
+    margin:0 150px;
+}
+#send-message{
+    width: 100%;
+    background-color: #fff;
+    color:#212529;
+    border:1px solid #212529;
+    padding: 5px 0;
+}
+#send-message:hover{
+    background-color: #212529;
+    color:#fff;
+}
