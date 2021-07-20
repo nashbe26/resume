@@ -2,9 +2,10 @@ import React from 'react';
 import {Container,Row,Col} from 'react-bootstrap'
 import './style.css'
 import Image from './public/img/sec-img.jpg'
+
 const AboutMe = ()=>{
     return(
-        <>
+        
         <section id='about-meq'>
             <Container>
                     <Row>
@@ -21,7 +22,9 @@ const AboutMe = ()=>{
                         <Col  md={5} xs={12} className='mx-auto'>
                            
                             <div className="img">
-                                <img src={Image} alt='sec' id='img-aboutme'/>
+
+                            <img src={Image} alt='sec' id='img-aboutme'/>
+                                
                             </div>
                         </Col>
                         
@@ -30,7 +33,7 @@ const AboutMe = ()=>{
         </section>
      
             
-        </>
+        
     )
 }
 export default AboutMe

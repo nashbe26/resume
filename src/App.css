@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 body{
     font-family: 'Cardo';
+    overflow-x: hidden;
+}
+a{
+    color:#212529;
+    display: block;
+    margin-bottom: 1rem;
+
+}
+a:hover{
+    color:#212529;
 }

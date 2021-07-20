@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+
 #about-meq{
-    padding:  150px 0;
+    padding:  100px 0;
 }
 .h5{
     margin-bottom: .5rem;
@@ -45,6 +46,21 @@
     font-size: 1rem;
     color: #212529;
     letter-spacing: 0em;
+    text-align: justify;
+
+}
+.links-text{
+    padding-left: 16px;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.descrip-text{
+    padding-top: 12px;
+    font-size: 1rem;
+}
+span{
+    font-style: italic;
+
 }
 #about-letter{
     font-family: "Cardo","Times New Roman",Times,serif;
@@ -54,17 +70,16 @@
     letter-spacing: 0em;
 }
 #img-aboutme{
-    width: 528px;
-    height:528px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-   
 }
 .service-sec{
     padding: 150px 0;
     background-color:#eee ;
 }
 .pro-sec{
-    padding: 150px 0;
+    padding: 50px 0;
 }
 #project-image{
     width: 80%;
@@ -85,3 +100,16 @@
     background-color: #212529;
     color:#fff;
 }
+.modal-style{
+    width: 70%;
+}
+@media only screen and (max-width: 600px) {
+    #img-aboutme {
+      width: 0;
+      height: 0;
+    }
+    .descrip-text{
+    padding-top: 12px;
+    font-size: 0.75rem;
+}   
+  }
