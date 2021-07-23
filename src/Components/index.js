@@ -1,36 +1,55 @@
 import React from 'react';
 import './public/style.css'
 import {Animated} from "react-animated-css";
-import { motion } from "framer-motion"
+import me from "./public/img/me2.jpg"
 import {Col,Row,Container} from 'react-bootstrap';
+import Header from './partials/header'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 const Index = ()=>{
     return(
         <>
-        <section className='intro'>
-            <div className='image-header'>
+        <div className={ window.innerWidth <= 768 ? "navBar-header" : "d-none" }>
+            <h2>Alaa Taouti</h2>
+            <a className=""><FontAwesomeIcon icon={faBars} /></a>
+        </div>
+                <div className="resumeProfil">
+                    <img src={me} alt="Alaa Touati" id="myImage"/>   
+                    <Header></Header>                 
+                </div>
+        
+         <Row >              
+            <Col  md={12} xs={12} >
+        
+             <section className='intro'>
+                <div className='image-header'>
                 <div className='overlay'>
                 </div>
+                
                 <div className='content'>
                     <Container className='clear-sides'>
                         <Row >
                             <Col xs={12} md={8} className='mx-auto ' >
+                            
                                 <Animated animationIn="animationOut " animationOut="fadeOut" isVisible={true}>
-                                    <p id='italic'> </p>
-                                    <motion.p   animate={{ x: 100 }}
-  transition={{ ease: "easeOut", duration: 2 }}>
-Oh, hello, nice to meet you!
-  </motion.p>
-                                    <p id='text-intro'>I AM B&W LANDING<br/> PAGE OR PORTFOLIO<br/> THEME.</p>
+                                    <p id='italic'> Oh, hello, nice to meet you!</p>
+                                    <p id='text-intro'>I AM ALAA TOUATI Full Stack Web<br/> Developer.</p>
 
                                 </Animated>
-                                    <p id='italic'>I am a ready to be your portfolio, telling your stories and short presentations.</p>
+                                    <p id='italic'>I am a full stack web developer, developing your web application in a perfect way.</p>
                             </Col>
                         </Row>
                     </Container>            
                 </div>
             </div>
         </section>    
+                            </Col>
+     
+       
+        </Row>
         </>
     )
 }

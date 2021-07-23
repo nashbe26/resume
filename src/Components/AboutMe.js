@@ -15,8 +15,8 @@ const AboutMe = ()=>{
                             </div>
                             <div>
                                 <h4 id='about-letter'>This can be an about section.</h4>
-                                <p id='about-text'>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.<br/><br/>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.
-                                </p>
+      
+                                <p id='about-text'>Having recently graduated from the University of Manouba with a degree in Computer Science, I have completed one internship within web developement.Also having a career as a freelancer gave me the chance to get more knowledge, learn new technologies and get experience in web development. I am very ambiance person  I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills.</p>
                             </div>
                         </Col>
                         <Col  md={5} xs={12} className='mx-auto'>

@@ -50,7 +50,7 @@ const Portfolio = ()=>{
                 <Container>
                 <p id='main-text'>PORTFOLIO</p>
                     <Row >
-                        <Col md={4} xs={12}>
+                        <Col md={4} xs={12} className="p-6">
  
                         <div className='text-center'>
                         <img src={uninet} alt='asaperuse' id='project-image' onClick={handleShow}/>
@@ -58,16 +58,13 @@ const Portfolio = ()=>{
                           
                             </div>
                         </Col>
-                        <Col md={4} xs={12}>
+                        <Col md={4} xs={12} className="p-6">
                             <div className='text-center'>
-                               
-                                    <img src={Desklo}className='' alt='Desklo' id='project-image' onClick={handleShow1}/>
-                                
+                                <img src={Desklo}className='' alt='Desklo' id='project-image' onClick={handleShow1}/>
                             </div>
                         </Col>
-                        <Col md={4} xs={12}>
+                        <Col md={4} xs={12} className="p-6">
                         <div className='text-center'>
-                           
                         <img src={Asap1} alt='asaperuse' id='project-image' onClick={handleShow2}/>
 
                          </div>   

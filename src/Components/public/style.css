@@ -73,7 +73,40 @@
     max-width: 800px;
     margin: 1.75rem auto;
 }
-
+.resumeProfil{
+    z-index: 9999;
+    background-color: black;
+    width: 200px;
+}
+.copy{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+    font-family: "Montserrat",sans-serif;
+    color: #777;
+}
+.header-main a:hover{
+    color: white;
+}
+.copy a:hover{
+    color: white;
+}
+.copy p{
+margin: 0;
+padding: 0;
+line-height: 1.75;
+text-align: center;
+}
+.copy a{
+    color:#777;
+    font-size: 16px;
+    margin: 0;
+}
+.header-main span{
+    margin: 0 15px 0 0;
+}
 
 @media only screen and (max-width: 600px) {
     #text-intro{
@@ -94,5 +127,17 @@
         max-width: 100%;
         margin: 1.75rem auto;
     }
-    
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #000;
+        z-index: 2;
+        opacity: 0.6;
+    }
+    .resumeProfil{
+        z-index: 999;
+    }
   }
