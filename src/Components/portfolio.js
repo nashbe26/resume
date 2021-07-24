@@ -52,19 +52,19 @@ const Portfolio = ()=>{
                     <Row >
                         <Col md={4} xs={12} className="p-6">
  
-                        <div className='text-center'>
+                        <div className='text-center shadow-box'>
                         <img src={uninet} alt='asaperuse' id='project-image' onClick={handleShow}/>
 
                           
                             </div>
                         </Col>
                         <Col md={4} xs={12} className="p-6">
-                            <div className='text-center'>
+                            <div className='text-center shadow-box'>
                                 <img src={Desklo}className='' alt='Desklo' id='project-image' onClick={handleShow1}/>
                             </div>
                         </Col>
                         <Col md={4} xs={12} className="p-6">
-                        <div className='text-center'>
+                        <div className='text-center shadow-box'>
                         <img src={Asap1} alt='asaperuse' id='project-image' onClick={handleShow2}/>
 
                          </div>   

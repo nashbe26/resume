@@ -16,7 +16,7 @@ const Navbars = ()=>{
     return(
         <Navbar  collapseOnSelect  expand="lg"  sticky="top" id='navbar'>
             <Container>
-            <div >
+            <div >  
 
                 <Navbar.Brand href='#home' style={{paddingTop:"10px"}}>
                         <h3 style={{display:"flex",alignContent:"center",fontFamily:"Cardo, sans-serif",fontStyle: 'italic',paddingTop:"10px"}}>Alaa Eddine Touati</h3>

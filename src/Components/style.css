@@ -158,9 +158,14 @@ span{
     background-color: #212529;
     color:#fff;
 }
+
 .modal-style{
     width: 70%;
 }
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
 .resumeProfil{
     z-index: 9999;
     background-color: #17181b;
@@ -168,6 +173,14 @@ span{
     height: 100vh;
     position: absolute;
     display: none;
+}
+.shadow-box{
+    -webkit-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.82); 
+box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.82);
+padding: 15px;
+width: 100%;
+height: 150px;
+border-radius: 15px ;
 }
 #myImage{
     width: 100%;
@@ -177,7 +190,9 @@ span{
     .p-6{
         padding: 25px 0;
     }
-    col-
+    #text-header{
+        text-align: center;
+    }
     #img-aboutme {
         display: none;
       width: 0;
@@ -187,7 +202,9 @@ span{
     padding-top: 12px;
     font-size: 0.75rem;
 }   
-
+.padding-services{
+    text-align: center;
+}
 #foot-text{
     font-size: 14px;
 }
@@ -197,10 +214,10 @@ span{
 #project-image{
     width: 65%;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
-.padding-services{
-    padding: 15px;
-}
+
 #main-text{
     font-size: 1.5rem;
 }

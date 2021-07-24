@@ -2,7 +2,9 @@
 body{
     font-family: 'Cardo';
     overflow-x: hidden;
+    padding: 0;
 }
+
 a{
     color:#212529;
     display: block;
@@ -12,6 +14,7 @@ a{
 a:hover{
     color:#212529;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -27,4 +30,20 @@ a:hover{
   ::-webkit-scrollbar-thumb {
     background: rgba(163, 162, 162, 0.849);
     border-radius: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: none;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: none;;
+      border-radius: 0;
+    }
   }

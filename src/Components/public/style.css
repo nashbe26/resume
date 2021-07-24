@@ -110,7 +110,7 @@ text-align: center;
 
 @media only screen and (max-width: 600px) {
     #text-intro{
-        padding-left:30px;
+        padding-left:0;
         line-height: 1.44;
         font-family: 'Montserrat', sans-serif;
         font-size:1.2rem;
@@ -140,4 +140,10 @@ text-align: center;
     .resumeProfil{
         z-index: 999;
     }
+    #italic {
+        padding-left: 0;
+        font-style: italic;
+        font-size: 1.3rem;
+    }
+    
   }
