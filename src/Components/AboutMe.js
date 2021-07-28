@@ -9,7 +9,7 @@ const AboutMe = ()=>{
         <section id='about-meq'>
             <Container>
                     <Row>
-                        <Col md={6} xs={12} >
+                        <Col lg={6}md={12} xs={12} >
                             <div className='content-aboutme'>
                                 <h2 id='main-text'>ABOUT ME</h2>
                             </div>

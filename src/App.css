@@ -2,8 +2,9 @@
 body{
     font-family: 'Cardo';
     overflow-x: hidden;
+    margin: 0;
     padding: 0;
-}
+  }
 
 a{
     color:#212529;

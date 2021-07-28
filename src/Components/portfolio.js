@@ -70,7 +70,7 @@ const Portfolio = ()=>{
                          </div>   
                         </Col>
                     </Row>
-                    <Modal show={show} onHide={handleShow} className="w-100">
+                    <Modal show={show} onHide={handleShow} className="w-100 modal-padding">
                             <Modal.Header closeButton  onClick={handleClose}>
                             <Modal.Title>Asapreuse</Modal.Title>
                             </Modal.Header>

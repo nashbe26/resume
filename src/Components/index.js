@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './public/style.css'
 import {Animated} from "react-animated-css";
 import me from "./public/img/me2.jpg"
@@ -9,22 +9,45 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 const Index = ()=>{
+    const [value ,setValue] = useState(true)
     useEffect(()=>{
-        console.log(
-            window.innerWidth
-        );
-    },[])
+        window.addEventListener('resize',()=>{
+            document.getElementById('proff').classList.add('d-none')
+            if (window.innerWidth <= 768){
+                document.getElementById('proff').classList.remove('d-none')
+            }
+        })
+        
+       },[])
+       useEffect(()=>{
+           if(value == true){
+            document.getElementById('icon-select').addEventListener('click',()=>{
+                document.getElementById('proff-1').style.display="block"
+            })
+           }else{
+            document.getElementById('icon-select').addEventListener('click',()=>{
+                document.getElementById('proff-1').style.display="none"
+            })
+           }
+        
+    
+    },[value])
     return(
         <>
-        <div className={ window.innerWidth <= 768 ? "navBar-header" : "d-none" }>
-            <h2>Alaa Taouti</h2>
-            <a className=""><FontAwesomeIcon icon={faBars} /></a>
+        <div class="d-none" id="proff">
+            <div className="navBar-header" >
+                <h2>Alaa Taouti</h2>
+                <a  onClick={()=>setValue(!value) } id="icon-select"><FontAwesomeIcon icon={faBars} /></a>
+            </div>
         </div>
-                <div className="resumeProfil">
+
+        <Animated animationIn="slideInLeft" animationOut="slideOutRight" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
+
+                <div className="resumeProfil-n" id="proff-1">
                     <img src={me} alt="Alaa Touati" id="myImage"/>   
                     <Header></Header>                 
                 </div>
-        
+        </Animated>        
          <Row >              
             <Col  md={12} xs={12} className="nopadding">
         
