@@ -48,7 +48,7 @@ const Portfolio = ()=>{
             <section className='pro-sec'>
             
                 <Container>
-                <p id='main-text'>PORTFOLIO</p>
+                <p id='main-text' className="animate__animated animate__shakeY">PORTFOLIO</p>
                     <Row >
                         <Col md={4} xs={12} className="p-6">
  

@@ -7,7 +7,6 @@ import Header from './partials/header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-
 const Index = ()=>{
     const [value ,setValue] = useState(true)
     useEffect(()=>{
@@ -29,12 +28,14 @@ const Index = ()=>{
                 document.getElementById('proff-1').style.display="none"
             })
            }
-        
-    
     },[value])
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+        })
+    },[])
     return(
         <>
-        <div class="d-none" id="proff">
+        <div class="d-none " id="proff">
             <div className="navBar-header" >
                 <h2>Alaa Taouti</h2>
                 <a  onClick={()=>setValue(!value) } id="icon-select"><FontAwesomeIcon icon={faBars} /></a>
@@ -59,13 +60,11 @@ const Index = ()=>{
                 <div className='content'>
                     <Container className='clear-sides'>
                         <Row >
-                            <Col xs={12} md={8} className='mx-auto ' id="text-header">
+                            <Col xs={12} md={8} className='mx-auto animate__animated animate__jackInTheBox animate__slow' id="text-header">
                             
-                                <Animated animationIn="animationOut " animationOut="fadeOut" isVisible={true}>
                                     <p id='italic'> Oh, hello, nice to meet you!</p>
                                     <p id='text-intro'>I AM ALAA TOUATI Full Stack Web<br/> Developer.</p>
 
-                                </Animated>
                                     <p id='italic'>I am a full stack web developer, developing your web application in a perfect way.</p>
                             </Col>
                         </Row>

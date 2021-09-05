@@ -10,8 +10,8 @@ const AboutMe = ()=>{
             <Container>
                     <Row>
                         <Col lg={6}md={12} xs={12} >
-                            <div className='content-aboutme'>
-                                <h2 id='main-text'>ABOUT ME</h2>
+                            <div className='content-aboutme '>
+                                <h2 id='main-text' className="animate__animated animate__shakeY">ABOUT ME</h2>
                             </div>
                             <div>
                                 <h4 id='about-letter'>This can be an about section.</h4>

@@ -192,19 +192,19 @@ border-radius: 15px ;
     height: 199px;
 }
 @media only screen and (max-width: 768px) {
-    .p-6{
+.p-6{
         padding: 25px;
     }
-    #text-header{
+#text-header{
         text-align: center;
     }
-    #img-aboutme {
+#img-aboutme {
         display: none;
       width: 0;
       height: 0;
     }
 
-    .descrip-text{
+.descrip-text{
     padding-top: 12px;
     font-size: 0.75rem;
 }   
@@ -220,8 +220,7 @@ border-radius: 15px ;
 #project-image{
     width: 65%;
     height: auto;
-    align-items: center;
-    justify-content: center;
+    margin-top: 2rem;
 }
 h3{
     font-size: 1.25rem;
@@ -247,4 +246,4 @@ h3{
     position: absolute;
     display: none;
 }
-  }
+}

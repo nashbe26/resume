@@ -8,7 +8,7 @@ const Servive = ()=>{
         <>
         <section className='service-sec'>
             <Container>
-                <p id='main-text'>SERVICES</p>
+                <p id='main-text' className="animate__animated animate__shakeY">SERVICES</p>
                 <Row>
                     <Col md={4} xs={12} className="padding-services">
                         <div className='icon'>
