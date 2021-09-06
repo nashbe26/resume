@@ -20,6 +20,7 @@ const Contact = ()=>{
         else{
             setSpanName( <span></span>)
         }
+        
     }
     useEffect(()=>{
         handleSubmit()
