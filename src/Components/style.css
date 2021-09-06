@@ -146,9 +146,10 @@ span{
     width: 80%;
     height:auto;
 }
-.modal-dialogue{
+.modal-dialog{
     width: 80%;
-    margin:0 150px;
+    display: flex;
+    justify-content: center;
 }
 #send-message{
     width: 100%;
@@ -203,7 +204,7 @@ border-radius: 15px ;
       width: 0;
       height: 0;
     }
-
+    
 .descrip-text{
     padding-top: 12px;
     font-size: 0.75rem;

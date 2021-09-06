@@ -121,10 +121,10 @@ text-align: center;
     }
     .modal-content {
         height: auto;
-        width: 100%;
+        width: 80%;
       }
       .modal-dialog {
-        max-width: 100%;
+        max-width: 80%;
         margin: 1.75rem auto;
     }
     .overlay{
