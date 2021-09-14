@@ -12,7 +12,7 @@ const CarouselBox = (props)=>{
              {
                 props.images.map(x=>
                     <Carousel.Item>
-                        <img src={x} className="image-carousel"></img>
+                        <img className="img-blur" src={x} className="image-carousel"></img>
           
                     </Carousel.Item>)
             }

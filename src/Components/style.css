@@ -24,6 +24,17 @@
     color: #262626;
     margin-bottom: 10px;
 }
+.icon-style{
+    position: absolute;
+
+    top: 30%;
+    right: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9999;
+    color: white;
+    display: none;
+}
 #main-text{
     font-family: 'Montserrat', sans-serif;
     color:black;
@@ -135,6 +146,28 @@ span{
     height: 500px;
     border-radius: 50%;
 }
+.overlay-withe{
+    background-image:url('./public/img/desklo-new-logo.png') ;
+    width: 100%;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.overlay-main{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: none;
+  cursor: pointer;
+  border-radius:15px;
+ 
+}
 .service-sec{
     padding: 150px 0;
     background-color:#eee ;
@@ -185,13 +218,22 @@ span{
 box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.82);
 padding: 15px;
 width: 100%;
-height: 150px;
+height: 100px;
 border-radius: 15px ;
+margin: 0 10px;
 }
 #myImage{
     width: 100%;
     height: 199px;
 }
+.col-md-3{
+    max-width: 22% !important;
+}
+@keyframes test {
+    from {background-color:rgb(245, 108, 108) ;}
+    to {background-color: rgba(0,0,0,0.4);}
+  }
+  
 @media only screen and (max-width: 768px) {
 .p-6{
         padding: 25px;
@@ -241,6 +283,12 @@ h3{
 }
 .icon{
     text-align: center;
+}
+.icon-style{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
 }
 .modal-backdrop{
     height: 100% !important;
