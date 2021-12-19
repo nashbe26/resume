@@ -34,14 +34,10 @@ const Portfolio = ()=>{
     const div2 = useRef(null);
     const div3 = useRef(null);
     const img1 = useRef(null);
-    const zooom1 = useRef(null);
-    const zooom2 = useRef(null);
-    const zooom3 = useRef(null);
-    const divFade = useRef(null);
+   
     const handleClose = () => setShow(false);
     const handleClose1 = () => setShow1(false);
     const handleClose2 = () => setShow2(false);
-    const [url, setUrl] = useState([Asap1,Desklo]);
 
     const handleShow = () =>{
         setShow(true);
@@ -52,7 +48,7 @@ const Portfolio = ()=>{
 
     } 
     const handleShow2 = () =>{
-        setOverlay(!overlay);
+        setShow2(true);
 
     }
     function enterFun(){
@@ -65,22 +61,34 @@ const Portfolio = ()=>{
                 <Container>
                 <p id='main-text' className="animate__animated animate__shakeY">PORTFOLIO</p>
                     <Row >
-                        <Col md={3} xs={12} className="text-center shadow-box p-6" onClick={handleShow}>
-                                <img src={uninet} alt='asaperuse' ref={img1} id='project-image'  />
+                        <Col  xs={12} sm={12} md={4} lg={4}  className="text-center  p-6" onClick={handleShow}>
+                            <div className="shadow-box">
+                            <img src={uninet} alt='asaperuse' ref={img1} id='project-image'  />
+
+                            </div>
                         </Col>
-                        <Col md={3} xs={12} className=" text-center shadow-box p-6" onClick={handleShow2}>
-                                <img src={Desklo} alt='asaperuse' ref={img1} id='project-image'  className="pt-2"/>
+                        <Col xs={12} sm={12} md={4} lg={4} className=" text-center  p-6" onClick={handleShow2}>
+                            <div className="shadow-box">
+                            <img  src={Asap1}alt='asaperuse' ref={img1} id='project-image'  className="pt-2"/>
+
+                            </div>
                         </Col>
-                        <Col md={3} xs={12} className="text-center shadow-box p-6" onClick={handleShow1}>
-                                <img src={Asap1} alt='asaperuse' ref={img1} id='project-image'  />
+                        <Col  xs={12} sm={12} md={4} lg={4}className="text-center  p-6" onClick={handleShow1}>
+                            <div className="shadow-box">
+                            <img src={Desklo} alt='asaperuse' ref={img1} id='project-image'  />
+
+                            </div>
                         </Col>
-                        <Col md={3} xs={12} className="text-center shadow-box p-6">
+                        <Col xs={12} sm={12} md={4} lg={4} className="text-center p-6 mtop-5">
+                            <div className="shadow-box">
                             <p className="p-3" id="filter-text">  More project are coming soon ...</p>
+
+                            </div>
                         </Col>
                     </Row>
                     <Modal show={show} onHide={handleShow} className="w-100 modal-padding">
                             <Modal.Header closeButton  onClick={handleClose}>
-                            <Modal.Title>Asapreuse</Modal.Title>
+                            <Modal.Title>Uninet</Modal.Title>
                             </Modal.Header>
                                 <Modal.Body >
                                     <Carousel images={carOne}></Carousel>
@@ -92,7 +100,7 @@ const Portfolio = ()=>{
                         </Modal>
                         <Modal show={show1} onHide={handleShow1} className="w-100">
                             <Modal.Header closeButton  onClick={handleClose1}>
-                            <Modal.Title>Desklo.in</Modal.Title>
+                            <Modal.Title>Desklo.in </Modal.Title>
                             </Modal.Header>
                                 <Modal.Body>                            
                                 <Carousel images={carTwo}></Carousel>
@@ -103,7 +111,7 @@ const Portfolio = ()=>{
                         </Modal>
                         <Modal show={show2} onHide={handleShow2} className="w-100">
                             <Modal.Header closeButton  onClick={handleClose2}>
-                            <Modal.Title>Uninet</Modal.Title>
+                            <Modal.Title> Asapreuse</Modal.Title>
                             </Modal.Header>
                                 <Modal.Body>                            
                                 <Carousel images={carThree}></Carousel>

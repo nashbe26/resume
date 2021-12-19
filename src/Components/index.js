@@ -35,7 +35,7 @@ const Index = ()=>{
     },[])
     return(
         <>
-        <div class="d-none " id="proff">
+        <div class="w-100" id="proff"  >
             <div className="navBar-header" >
                 <h2>Alaa Taouti</h2>
                 <a  onClick={()=>setValue(!value) } id="icon-select"><FontAwesomeIcon icon={faBars} /></a>
@@ -66,6 +66,8 @@ const Index = ()=>{
                                     <p id='text-intro'>I AM ALAA TOUATI Full Stack Web<br/> Developer.</p>
 
                                     <p id='italic'>I am a full stack web developer, developing your web application in a perfect way.</p>
+
+                                    <a id="download-cv" href="/public/resume.pdf" download="resume.pdf">Download Resume</a>
                             </Col>
                         </Row>
                     </Container>            

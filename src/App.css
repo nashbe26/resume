@@ -4,8 +4,13 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+
   }
 
+  html{
+    overflow-x: hidden;
+
+  }
 a{
     color:#212529;
     display: block;
@@ -41,7 +46,13 @@ a:hover{
     ::-webkit-scrollbar-track {
       box-shadow: none;
     }
+    body{
+    font-family: 'Cardo';
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     
+  }
     /* Handle */
     ::-webkit-scrollbar-thumb {
       background: none;;

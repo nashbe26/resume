@@ -1,5 +1,6 @@
 import React, { useEffect, useState,useRef } from 'react';
 import {Container, Form,Col,Row} from 'react-bootstrap';
+import {Animated} from "react-animated-css";
 
 
 const Contact = ()=>{
@@ -9,7 +10,13 @@ const Contact = ()=>{
     const [message,setMessage] = useState('');
     const [check,setCheck] = useState(false);
     const [spanName,setSpanName] = useState(false);
-    
+    const [animate, setAnimate] = useState(false);
+    const [DivAnimate, setDivAnimate] = useState('');
+    function handelSubmit(){
+       
+        
+    }
+  
     const firstNameRef = useRef(null)
     const lastNameRef = useRef(null)
     const emailRef = useRef(null)
@@ -22,10 +29,31 @@ const Contact = ()=>{
         }
         
     }
+    function handleAnim (){
+        console.log(DivAnimate);
+        if(animate){
+            
+            setDivAnimate( 
+                <div class="alert alert-primary">
+                    You just sent an Email, Nice ! 
+                </div>
+               )
+                setTimeout(() => {
+                    setDivAnimate( <span></span>)
+                    setAnimate(false)
+                }, 3000);
+        }
+        else{
+            setDivAnimate( <span></span>)
+        }
+        
+    }
     useEffect(()=>{
         handleSubmit()
         },[lastName])
-    
+        useEffect(()=>{
+            handleAnim()
+        },[animate])
     return(
         <>
         <section id='about-meq'>
@@ -37,8 +65,7 @@ const Contact = ()=>{
                             <Col md={6} xs={12}>
                             <Form.Group>
                                 <Form.Label>Your First Name</Form.Label>
-                                <Form.Control type='text' ref={firstNameRef} placeholder='Enter your firstname' onChange={(e) => setName(e.target.value)}/>
-                                {spanName}
+                                <Form.Control type='email' required ref={firstNameRef} placeholder='Enter your firstname' onChange={(e) => setName(e.target.value)}/>
                             </Form.Group>
                             </Col>
                             <Col md={6} xs={12}>
@@ -64,11 +91,13 @@ const Contact = ()=>{
                                 </Form.Group>
                             </Col>
                         </Row>
-                        <Row>
+                {DivAnimate}                        
+<Row>
                             <Col md={12}>
-                                <button id='send-message' type='submit'>Send message</button>
+                                <button id='send-message' type='submit' onClick={()=> setAnimate(true)}>Send message</button>
                             </Col>
                         </Row>
+                        
                     </Col>
                 </Row>
             </Container>
